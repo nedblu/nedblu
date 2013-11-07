@@ -1,0 +1,380 @@
+// font-family: 'Ubuntu Mono', sans-serif;
+// font-family: 'Voces', cursive;
+// font-family: 'Droid Sans', sans-serif;
+// font-family: 'Pompiere', cursive;
+// font-family: 'Poiret One', cursive;
+// font-family: 'Waiting for the Sunrise', cursive;
+// font-family: 'Ovo', serif;
+// font-family: 'Julius Sans One', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Pontano Sans', sans-serif;
+
+// font-family: 'Nobile', sans-serif;
+
+@import "prefix.styl"
+@import url('http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic|Voces|Droid+Sans:400,700|Pompiere|Poiret+One|Waiting+for+the+Sunrise|Ovo|Julius+Sans+One|Open+Sans:300italic,400italic,400|Pontano+Sans')
+@import url('http://fonts.googleapis.com/css?family=Nobile|Julius+Sans+One|Inconsolata')
+@font-face
+  font-family 'Kite One'
+  font-style normal
+  font-weight 400
+  src: local("Kite One"), local("KiteOne-Regular"), url("http://themes.googleusercontent.com/static/fonts/kiteone/v1/VNHoD96LpZ9rGZTwjozAOnYhjbSpvc47ee6xR_80Hnw.woff") format("woff"); 
+
+@font-face {
+	font-family: 'menu';
+	src:url('fonts/menu.eot');
+	src:url('fonts/menu.eot?#iefix') format('embedded-opentype'),
+		url('fonts/menu.woff') format('woff'),
+		url('fonts/menu.ttf') format('truetype'),
+		url('fonts/menu.svg#menu') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Vars
+nav_bg = #2a2a2a
+blu = #3BAFDA
+
+nav_color = rgba(132, 147, 163, 1)
+nav_color_2 = #3BAFDA
+light_gray_1 = #F5F7FA
+light_gray_2 = #E6E9ED
+
+dark_gray_1 = #656D78
+dark_gray_2 = #434A54
+sweet_green = rgb(26, 188, 156)
+
+*
+	box-sizing(border-box)
+	default_values()
+
+ul
+	list-style none
+
+a
+	text-decoration none
+	color #222
+
+.fs0:before
+	font-size 1.1em
+	color sweet_green
+
+[data-icon]:before
+	font-family 'menu'
+	content attr(data-icon)
+	speak none
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+// Navigation ...
+.nav-bar
+	width 100%
+	background-color light_gray_1
+	border-bottom 2px solid darken(dark_gray_1,-40)
+	position fixed
+
+
+.nav-hold
+	overflow hidden
+	max-width 900px
+
+.nav-logo
+	color dark_gray_1
+	padding 0.4em 0.5em
+	font-size 1.6em
+	float left
+	display block
+	letter-spacing 1px
+	font-family 'Voces', cursive
+	font-weight normal
+	text-shadow 0px 0px 0.1em dark_gray_1 /* testing */
+
+.bluTitle
+	color sweet_green
+	font-size 1em
+	letter-spacing 2px
+	text-shadow 0px 0px 0.1em dark_gray_1 /* testing */
+
+.nav-list
+	float right
+	li
+		float left
+		a
+			display block
+			// border 1px solid red
+			font-size 1.2em
+			padding 0.8em 0.5em
+			color darken(dark_gray_1,-10)
+			font-family 'Pontano Sans', sans-serif
+
+			transition(all 0.5s ease)
+			&:hover
+				color #666
+
+.nav-menu
+	display none
+
+// END NAVIGATION ...
+
+// TITLES
+.sec-title
+	text-align center
+	font-size 2.5em
+	padding 1em 0
+	color dark_gray_2
+	font-family 'Inconsolata', sans-serif
+	font-weight 200
+	letter-spacing 0.2em
+	// text-shadow 2px 2px 2px #888
+// END TITLES
+
+// SERVICIOS
+/* SERVICIOS... */
+#bg_servicios
+	width 100%
+	background-color light_gray_2
+	padding-bottom 2em
+	article
+		// border 1px solid blue
+		figure
+			// border 1px solid blue
+			text-align center
+			img
+				// border 1px solid red
+				width 90%
+				max-width 800px
+				height auto
+			figcaption
+				border-right 4px solid #444
+				width 90%
+				max-width 800px
+				text-align right
+				color dark_gray_2
+				font-family 'Poiret One', cursive
+				font-size 2em
+				font-style italic
+				padding 0.25em 0.25em 0.25em 0
+				margin 0.5em auto 0.5em auto
+		#flex-container
+			width 90%
+			max-width 800px
+
+			display -webkit-flex
+			display -ms-flexbox
+			display flex
+
+			-webkit-flex-flow column wrap
+			flex-flow column wrap
+
+			-webkit-justify-content flex-start
+			-moz-box-pack flex-start
+			-ms-flex-pack start
+			justify-content flex-start
+
+			// border 1px solid red
+			.service-item
+				margin 0
+				// border 1px solid blue
+				padding 0.5em 0
+				max-width 420px
+				font-family 'Open Sans', serif
+				color sweet_green
+				&:nth-child(odd)
+					text-align left
+				&:nth-child(even)
+					text-align right
+				h3
+					font-size 1.4em
+				p
+					color dark_gray_2
+			.self
+				-webkit-align-self flex-end
+				-moz-align-self flex-end
+				-ms-flex-item-align end
+				align-self flex-end
+/* END SERVICIOS */
+
+
+
+// EQUIPO ...
+/* EQUIPO ... */
+#bg_equipo
+	width 100%
+	background-color light_gray_2
+#equipo
+	max-width 900px
+	padding-bottom 1em
+	display -webkit-flex
+	display -moz-box
+	display -ms-flexbox
+	display flex
+	-webkit-justify-content center
+	-moz-box-pack center
+	-ms-flex-pack center
+	justify-content center
+
+	-webkit-flex-flow row wrap
+	flex-flow row wrap
+
+	-ms-flex-direction row
+	-ms-flex-wrap wrap
+
+figure
+	padding-top 0.5em
+
+.member
+	border-radius(0.25em)
+	margin 0.5em
+	width 240px /* testing 180px */
+	font-family 'Open Sans', serif
+	
+	.member-img
+		width 120px
+		border 4px solid #ccc
+		box-shadow(0px 0px 0.5em #ccc)
+		height auto
+		border-radius(50%)
+		display block /* testing */
+	.member-data
+		padding 0.25em 0
+		color dark_gray_2
+		.member-name, .member-job, .member-twitter
+			padding 0.15em 0
+		.member-name
+			font-weight 200
+		.member-job
+			font-size 0.9em
+		.member-twitter
+			padding 0.4em 0
+			font-family 'Voces', cursive
+			font-weight 200
+			a
+				color sweet_green
+		.arroba
+			color sweet_green
+			margin-right 1px
+.member-data
+	text-align center
+// END EQUIPO ...
+
+// CONTACTO
+#bg_contacto
+	background-color light_gray_1
+#contacto
+	max-width 900px
+
+#box-contact
+	max-width 480px
+	padding 0 0.5em 2em 0.5em
+	.box-contact-email
+		border 2px solid sweet_green
+		border-radius(0.2em)
+		padding 0.25em 0
+		margin-bottom 1em
+		.fs2
+			display inline-block
+			color darken(#2c3e50, -10)
+			padding 0em 0.5em
+			font-size 1.3em
+			vertical-align middle
+		input
+			border none
+			font-family 'Voces', cursive
+			background-color light_gray_1
+			color #2c3e50
+			padding 0.3em 0.5em 0.3em 0.3em
+			outline none
+			display inline-block
+			width 85%
+	.box-contact-message
+		margin-top 1em
+		textarea
+			font-family 'Voces', cursive
+			background-color light_gray_1
+			border 2px solid sweet_green
+			border-radius(0.2em)
+			color #2c3e50
+			padding 0.3em 0.5em
+			outline none
+			maxlength 140
+			resize none
+			width 100%
+		.animated
+			transition(height 0.2s)
+	.box-button-align
+		text-align right
+		margin-top 0.5em
+	.box-contact-button
+		font-family 'Voces', cursive
+		background-color light_gray_1
+		border 2px solid sweet_green
+		border-radius(0.2em)
+		background-color transparent
+		color #2c3e50
+		outline none
+		cursor pointer
+		font-size 1.2em
+		padding 0.25em 1em
+		transition(all 0.2s ease)
+		&:hover
+			box-shadow(0px 0px 0.5em sweet_green)
+
+// END CONTACTO
+
+// IE10 Fix...
+@-ms-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+// Screen for iPad 1, 2, 3, 4 & mini, Nexus 7...
+@media screen and (max-width: 768px)
+	// Navigation ...
+	.nav-bar
+		border-bottom none
+	.bluTitle
+		font-weight 600
+	.nav-menu
+		color #666
+		text-shadow 0px 0px 1px dark_gray_2
+		font-size 1.4em
+		padding 0.6em 0em
+		float right
+		display block
+		cursor pointer
+	.fs1:before
+		font-size 1.6em
+		padding 0em 0.5em
+	
+	.nav-list
+		float left
+		width 100%
+		overflow hidden
+		background-color darken(light_gray_1, -2)
+		border-bottom 2px solid darken(dark_gray_1,-40)
+		height 0
+
+	.nav-open
+		height auto
+
+	.nav-list li
+		width 50%
+
+	/* EQUIPO */
+	.member
+		width 260px
+
+@media screen and (max-width: 384px)
+	#contacto #box-contact .box-button-align
+		text-align center
+
+	#bg_servicios
+		article
+			figure
+				figcaption
+					font-size 1.4em
+
+
+
