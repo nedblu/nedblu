@@ -15,3 +15,5 @@ Route::get('/', function()
 {
 	return View::make('nedblu');
 });
+
+Route::post('email', 'MailController@email');

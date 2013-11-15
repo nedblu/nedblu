@@ -20,16 +20,12 @@
   font-weight 400
   src: local("Kite One"), local("KiteOne-Regular"), url("http://themes.googleusercontent.com/static/fonts/kiteone/v1/VNHoD96LpZ9rGZTwjozAOnYhjbSpvc47ee6xR_80Hnw.woff") format("woff"); 
 
-@font-face {
-	font-family: 'menu';
+@font-face
+	font-family 'menu';
 	src:url('fonts/menu.eot');
-	src:url('fonts/menu.eot?#iefix') format('embedded-opentype'),
-		url('fonts/menu.woff') format('woff'),
-		url('fonts/menu.ttf') format('truetype'),
-		url('fonts/menu.svg#menu') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+	src:url('fonts/menu.eot?#iefix') format('embedded-opentype'), url('fonts/menu.woff') format('woff'), url('fonts/menu.ttf') format('truetype'), url('fonts/menu.svg#menu') format('svg');
+	font-weight normal
+	font-style normal
 
 // Vars
 nav_bg = #2a2a2a
@@ -47,6 +43,9 @@ sweet_green = rgb(26, 188, 156)
 *
 	box-sizing(border-box)
 	default_values()
+
+body
+	background-color light_gray_2
 
 ul
 	list-style none
@@ -76,6 +75,7 @@ a
 	background-color light_gray_1
 	border-bottom 2px solid darken(dark_gray_1,-40)
 	position fixed
+	z-index 1000
 
 
 .nav-hold
@@ -138,13 +138,10 @@ a
 	width 100%
 	background-color light_gray_2
 	padding-bottom 2em
-	article
-		// border 1px solid blue
+	.nedblu
 		figure
-			// border 1px solid blue
 			text-align center
 			img
-				// border 1px solid red
 				width 90%
 				max-width 800px
 				height auto
@@ -174,19 +171,40 @@ a
 			-moz-box-pack flex-start
 			-ms-flex-pack start
 			justify-content flex-start
-
-			// border 1px solid red
 			.service-item
 				margin 0
-				// border 1px solid blue
 				padding 0.5em 0
-				max-width 420px
+				max-width 480px
 				font-family 'Open Sans', serif
 				color sweet_green
 				&:nth-child(odd)
 					text-align left
 				&:nth-child(even)
 					text-align right
+				
+				// BORRAR...
+				.img_box
+					width 100px
+					height auto
+					display inline-block
+					text-align center
+					vertical-align middle
+					img
+						width 100%
+						height auto
+						padding 0.5em
+					.img_2
+						width 70%
+					.img_3
+						padding 0
+				.data_box
+					width 76%
+					padding 0.5em
+					// border 1px solid green
+					display inline-block
+					vertical-align middle
+				// END BORRAR...
+				
 				h3
 					font-size 1.4em
 				p
@@ -198,14 +216,59 @@ a
 				align-self flex-end
 /* END SERVICIOS */
 
+/* PORTAFOLIO */
+#bg_portafolio
+	background-color light_gray_1
+	padding-bottom 1em
+	.portafolio
+		max-width 900px
+		padding-bottom 1em
+		display -webkit-flex
+		display -moz-box
+		display -ms-flexbox
+		display flex
+		-webkit-justify-content center
+		-moz-box-pack center
+		-ms-flex-pack center
+		justify-content center
 
+		-webkit-flex-flow row wrap
+		flex-flow row wrap
+
+		-ms-flex-direction row
+		-ms-flex-wrap wrap
+		.client_item
+			border 2px solid light_gray_2
+			border-radius(0.25em)
+			text-align center
+			display inline-block
+			margin 0.5em
+			figure
+				padding 0.5em
+				img
+					width 200px
+					height auto
+					display block
+			p
+				a
+					padding 0.5em 0
+					display block
+					color sweet_green
+					// color #1abc9c
+					// color #16a085
+					// color #2ecc71
+					// color #27ae60
+					background-color light_gray_2
+					font-family 'Voces', cursive
+					font-weight 200
+/* END PORTAFOLIO */
 
 // EQUIPO ...
 /* EQUIPO ... */
 #bg_equipo
 	width 100%
 	background-color light_gray_2
-#equipo
+.equipo
 	max-width 900px
 	padding-bottom 1em
 	display -webkit-flex
@@ -229,16 +292,15 @@ figure
 .member
 	border-radius(0.25em)
 	margin 0.5em
-	width 240px /* testing 180px */
+	width 240px
 	font-family 'Open Sans', serif
-	
 	.member-img
 		width 120px
 		border 4px solid #ccc
 		box-shadow(0px 0px 0.5em #ccc)
 		height auto
 		border-radius(50%)
-		display block /* testing */
+		display block
 	.member-data
 		padding 0.25em 0
 		color dark_gray_2
@@ -264,7 +326,7 @@ figure
 // CONTACTO
 #bg_contacto
 	background-color light_gray_1
-#contacto
+.contacto
 	max-width 900px
 
 #box-contact
@@ -325,6 +387,22 @@ figure
 
 // END CONTACTO
 
+// SOCIAL NETWORKS
+#social_networks
+	// border 1px solid blue
+	margin 0 auto
+	width 100%
+	text-align center
+	margin 2em auto 1em auto
+.fb-like
+	margin 0.5em auto !important
+	text-align center
+	padding 0 0.5em
+.twitter-follow-button
+	padding 0 0.5em
+
+// END SOCIAL NETWORKS
+
 // IE10 Fix...
 @-ms-viewport { width: device-width; }
 @viewport { width: device-width; }
@@ -365,6 +443,18 @@ figure
 	/* EQUIPO */
 	.member
 		width 260px
+
+@media screen and (max-width: 480px)
+	.img_box
+		background-color red
+		display none !important
+	.data_box
+		width 100% !important
+	.fb-like
+		display block
+		padding 0 1em
+	.twitter-follow-button
+		display block
 
 @media screen and (max-width: 384px)
 	#contacto #box-contact .box-button-align

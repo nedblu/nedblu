@@ -19,7 +19,7 @@ $(document).ready(function() {
 
 	// Container margin-top...
 	var h = $('.nav-bar').height();
-	h-=4;
+	h-=6;
 	$('#container').css('padding-top', h);
 
 	// Autosizing textarea with animation...

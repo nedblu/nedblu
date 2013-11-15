@@ -28,7 +28,8 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.mailgun.org',
+	// 'host' => 'smtp.mailgun.org',
+	'host' => 'mail.nedblu.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +81,8 @@ return array(
 	|
 	*/
 
-	'username' => null,
+	// 'username' => null,
+	'username' => 'info@nedblu.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +95,8 @@ return array(
 	|
 	*/
 
-	'password' => null,
+	// 'password' => null,
+	'password' => 'hReRrFJ2b52e',
 
 	/*
 	|--------------------------------------------------------------------------
