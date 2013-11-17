@@ -113,9 +113,9 @@
 			<div id="social_links">
 				<a target="_blank" href="{{ url('https://www.facebook.com/NedBlu') }}"><span class="icon-appfacebook3"></a>
 				<a target="_blank" href="{{ url('https://twitter.com/nedblu') }}"><span class="icon-apptwitter3"></a>
-				<a target="_blank" href="{{ url('https://plus.google.com/u/0/b/115149336912971069701/105197020584239115483/posts') }}"><span class="icon-appgoogle-plus3"></a>
-				<a target="_blank" href="{{ url('http://www.youtube.com/channel/UC2w8dparillTLV_Dm-exuoQ') }}"><span class="icon-appyoutube"></a>
-				<a target="_blank" href="{{ url('https://github.com/nedblu') }}"><span class="icon-appgithub2"></span></a>
+				{{--<a target="_blank" href="{{ url('https://plus.google.com/u/0/b/115149336912971069701/105197020584239115483/posts') }}"><span class="icon-appgoogle-plus3"></a>--}}
+				{{--<a target="_blank" href="{{ url('http://www.youtube.com/channel/UC2w8dparillTLV_Dm-exuoQ') }}"><span class="icon-appyoutube"></a>--}}
+				{{--<a target="_blank" href="{{ url('https://github.com/nedblu') }}"><span class="icon-appgithub2"></span></a>--}}
 			</div>
 		</div>
 		{{-- END SERVICIOS --}}
