@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
+Route::get('/', function(){
 	return View::make('nedblu');
 });
 
 Route::post('email', 'MailController@email');
+
+// Route::get('/mal', function(){
+// 	return 'Las validaciones NO estan funcionando...';
+// });

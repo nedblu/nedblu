@@ -30,7 +30,7 @@
 	{{-- NAVIGATION ... --}}
 	<nav class="nav-bar">
 		<div class="nav-hold">
-			<a href="#nedblu"><h1 class="nav-logo fs0" data-icon="&#xe002;"> Ned<span class="bluTitle">BLU</span></h1></a>
+			<a href="{{ url('/') }}"><h1 class="nav-logo fs0" data-icon="&#xe002;"> Ned<span class="bluTitle">BLU</span></h1></a>
 			<div id="nav-menu" class="nav-menu">
 				<div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
 			</div>
@@ -78,7 +78,7 @@
 					<section class="service-item self">
 						<div class="data_box">
 							<h3>Mobile Apps</h3>
-							<p>Creamos la aplicación de tu sitio o servicio para tu Smartphone o Tablet Android, iOS o Windows Phone.</p>
+							<p>Creamos la aplicación de tu sitio o servicio para tu Smartphone o Tablet, Android, iOS o Windows Phone.</p>
 						</div><!--
 						--><div class="img_box">
 							<img src="img/nexus.png" alt="" class="img_2">
@@ -110,6 +110,13 @@
 
 				<a href="https://twitter.com/NedBlu" class="twitter-follow-button" data-show-count="true" data-lang="en">@NedBlu</a>
 			</div>
+			<div id="social_links">
+				<a target="_blank" href="{{ url('https://www.facebook.com/NedBlu') }}"><span class="icon-appfacebook3"></a>
+				<a target="_blank" href="{{ url('https://twitter.com/nedblu') }}"><span class="icon-apptwitter3"></a>
+				<a target="_blank" href="{{ url('https://plus.google.com/u/0/b/115149336912971069701/105197020584239115483/posts') }}"><span class="icon-appgoogle-plus3"></a>
+				<a target="_blank" href="{{ url('http://www.youtube.com/channel/UC2w8dparillTLV_Dm-exuoQ') }}"><span class="icon-appyoutube"></a>
+				<a target="_blank" href="{{ url('https://github.com/nedblu') }}"><span class="icon-appgithub2"></span></a>
+			</div>
 		</div>
 		{{-- END SERVICIOS --}}
 		
@@ -137,7 +144,7 @@
 					</figure>
 					<div class="member-data">
 						<p class="member-name">Emilio Alberto Ojeda Mendoza</p>
-						<p class="member-job">Developer</p>
+						<p class="member-job">CEO, CTO, Backend & Frontend</p>
 						<p class="member-twitter"><a target="_blank" href="{{ url('https://twitter.com/emilMdOS') }}"><span class="arroba">@</span>emilMdOS</a></p>
 					</div>
 				</div>
@@ -148,7 +155,7 @@
 					</figure>
 					<div class="member-data">
 						<p class="member-name">Carlos David Aguilar Ruiz</p>
-						<p class="member-job">Developer</p>
+						<p class="member-job">CEO, CTO, Backend & Frontend</p>
 						<p class="member-twitter"><a target="_blank" href="{{ url('https://twitter.com/carlosdavidar') }}"><span class="arroba">@</span>carlosaguilarnet</a></p>
 					</div>
 				</div>
@@ -159,7 +166,7 @@
 					</figure>
 					<div class="member-data">
 						<p class="member-name">Felipe Arturo Perez Camargo</p>
-						<p class="member-job">Developer</p>
+						<p class="member-job">CEO & UX Designer</p>
 						<p class="member-twitter"><a target="_blank" href="{{ url('https://twitter.com/Perez_Camargo') }}"><span class="arroba">@</span>Perez_Camargo</a></p>
 					</div>
 				</div>
@@ -172,27 +179,35 @@
 			<h2 class="sec-title" id="contacto">Contacto</h2>
 			<article class="contacto">
 				<div id="box-contact">
-				{{Form::open( array('url' => 'email'));}}
+				{{Form::open( ['url' => 'email']);}}
+					<div class="box-contact-name">
+						{{ Form::text('name', '', [
+							'placeholder' => 'Escribe tu nombre...',
+							'required' => 'required'
+						]) }}
+					</div>
 					<div class="box-contact-email">
-						<div class="fs2" aria-hidden="true" data-icon="&#xe003;"></div><!--
+						{{--<div class="fs2" aria-hidden="true" data-icon="&#xe003;"></div>--}}<!--
 						-->
-						{{ Form::email('email', '', array(
+						{{ Form::email('email', '', [
 							'class' => 'email',
-							'placeholder' => 'Tu correo...'
-						)) }}
+							'placeholder' => 'Escribe tu correo...',
+							'required' => 'required'
+						]) }}
 					</div>
 					<div class="box-contact-message">
-						{{ Form::textarea('mensaje', '', array(
+						{{ Form::textarea('mensaje', '', [
 							'class' => 'animated',
-							'placeholder' => 'Escribenos tu mensaje...',
+							'placeholder' => 'Escribe tu mensaje...',
 							'cols' => '0',
-							'rows' => '0'
-						)) }}
+							'rows' => '0',
+							'required' => 'required'
+						]) }}
 					</div>
 					<div class="box-button-align">
-						{{ Form::submit('Comentanos', array(
+						{{ Form::submit('Comentanos', [
 							'class' => 'box-contact-button'
-						)) }}
+						]) }}
 					</div>
 				{{ Form::close() }}
 				</div>
@@ -200,6 +215,20 @@
 		</div>
 		{{-- END CONTACTO --}}
 	{{-- END ARTICLES --}}
+
+	<footer id="footer">
+		<div class="browsers">
+			<span class="icon-appchrome">
+			<span class="icon-appopera">
+			<span class="icon-appsafari">
+			<span class="icon-appIE">
+		</div>
+		<div class="platforms">
+			<span class="icon-appapple">
+			<span class="icon-appandroid">
+			<span class="icon-appwindows8">
+		</div>
+	</footer>
 
 	</section>
 	{{-- END CONTAINER --}}
