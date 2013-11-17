@@ -36,8 +36,8 @@
 			</div>
 			<ul id="nav" class="nav-list">
 				{{-- <li><a href="">Home</a></li> --}}
-				<li><a href="#nedblu">Servicios</a></li>
-				<li><a href="#portafolio">Portafolio</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#clientes">Clientes</a></li>
 				<li><a href="#equipo">Equipo</a></li>
 				<li><a href="#contacto">Contacto</a></li>
 				{{-- <li><a href="">Blog</a></li> --}}
@@ -54,7 +54,7 @@
 
 		{{-- SERVICIOS --}}
 		<div id="bg_servicios">
-			<h2 class="sec-title" id="nedblu">Servicios</h2>
+			<h2 class="sec-title" id="servicios">Servicios</h2>
 			<!-- <article id="nedblu"> -->
 			<article class="nedblu">
 				<figure>
@@ -122,7 +122,7 @@
 		
 		{{-- PORTAFOLIO --}}
 		<div id="bg_portafolio">
-			<h2 class="sec-title" id="portafolio">Portafolio</h2>
+			<h2 class="sec-title" id="clientes">Clientes</h2>
 			<article class="portafolio">
 				<div class="client_item">
 					<figure>

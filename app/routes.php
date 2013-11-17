@@ -17,6 +17,22 @@ Route::get('/', function(){
 
 Route::post('email', 'MailController@email');
 
+Route::get('/servicios', function(){
+	return Redirect::to('/#servicios');
+});
+
+Route::get('/clientes', function(){
+	return Redirect::to('/#clientes');
+});
+
+Route::get('/equipo', function(){
+	return Redirect::to('/#equipo');
+});
+
+Route::get('/contacto', function(){
+	return Redirect::to('/#contacto');
+});
+
 // Route::get('/mal', function(){
 // 	return 'Las validaciones NO estan funcionando...';
 // });
