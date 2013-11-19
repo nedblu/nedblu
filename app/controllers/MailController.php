@@ -25,16 +25,16 @@ class MailController extends BaseController{
 		    });
 		    
 		    return Redirect::to('/#contacto')->with([
-		    		'msg' => 'Correo enviado con éxito.',
+		    		'msg' => 'Correo enviado exitosamente.',
 		    		'res' => 'yes'
 		    	]);
 		
 		}
 
 	    return Redirect::to('/#contacto')->with([
-	    		'msg' => 'El correo NO se pudo enviar, ingresa los datos correctamente.',
-	    		'res' => 'no'
-	    	]);
+    		'msg' => 'El correo NO se pudo enviar, ingresa los datos en el formato correcto.',
+    		'res' => 'no'
+    	]);
 
 	}
 	
