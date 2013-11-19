@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>NedBLU | Creando tu mundo</title>
+	<meta name="author" content="NedBlu">
+	<meta name="description" content="NedBlu es una empresa dedicada al desarrollo de software para internet, dispositivos moviles, dispositivos de escritorio, usando siempre las ultimas tecnologias del mercado, y ademas brinda consultoria sobre SEO, SEM, y estrategias de Inbound y Outbound Marketing.">
+    <meta name="keywords" content="NedBlu, NedBLU, nedblu, nedblu.com, desarrollo, development, web, mobile, movil, apps, aplicaciones, sites, sitios, cosultoria, consultancy, seo, SEO, sem, SEM, marketing.">
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/estilo.css">
 	<script src="js/jquery-1.10.2.min.js"></script>
@@ -166,7 +169,7 @@
 					</figure>
 					<div class="member-data">
 						<p class="member-name">Felipe Arturo Perez Camargo</p>
-						<p class="member-job">CEO & UX Designer</p>
+						<p class="member-job">CEO, UX Designer & Frontend</p>
 						<p class="member-twitter"><a target="_blank" href="{{ url('https://twitter.com/Perez_Camargo') }}"><span class="arroba">@</span>Perez_Camargo</a></p>
 					</div>
 				</div>
@@ -187,8 +190,7 @@
 						]) }}
 					</div>
 					<div class="box-contact-email">
-						{{--<div class="fs2" aria-hidden="true" data-icon="&#xe003;"></div>--}}<!--
-						-->
+						{{--<div class="fs2" aria-hidden="true" data-icon="&#xe003;"></div>--}}
 						{{ Form::email('email', '', [
 							'class' => 'email',
 							'placeholder' => 'Escribe tu correo...',
@@ -221,7 +223,7 @@
 			<span class="icon-appchrome">
 			<span class="icon-appopera">
 			<span class="icon-appsafari">
-			<span class="icon-appIE">
+			{{--<span class="icon-appIE">--}}
 		</div>
 		<div class="platforms">
 			<span class="icon-appapple">

@@ -4,16 +4,16 @@ class MailController extends BaseController{
 
 	public function email()
 	{
-		// $inputs = Input::all();
-		// $rules = [
+		$inputs = Input::all();
+		$rules = [
 		// 	'name' => 'alpha',
-		// 	'email' => 'email',
+			'email' => 'email',
 		// 	'mensaje' => 'alpha'
-		// ];
+		];
 
-		// $validator = Validator::make($inputs, $rules);
+		$validator = Validator::make($inputs, $rules);
 
-		// if($validator->passes()){
+		if($validator->passes()){
 			
 			$nombre = Input::get('name');
 		    $email = Input::get('email');
@@ -27,9 +27,9 @@ class MailController extends BaseController{
 		    // return Redirect::to('/')->with('msg', 'Correo Enviado con Exito');
 		    return Redirect::to('/');
 		
-		// }
+		}
 
-	    // return Redirect::to('/mal');
+	    return Redirect::to('/mal');
 
 	}
 	

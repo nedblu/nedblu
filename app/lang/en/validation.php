@@ -82,6 +82,9 @@ return array(
 
 	'custom' => array(),
 
+	// Aregado...
+	"alpha_spaces" => "The :attribute may only contain letters and numbers.",
+
 	/*
 	|--------------------------------------------------------------------------
 	| Custom Validation Attributes

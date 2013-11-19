@@ -959,6 +959,7 @@ class Validator implements MessageProviderInterface {
 	protected function validateAlpha($attribute, $value)
 	{
 		return preg_match('/^\pL+$/u', $value);
+		// return preg_match('/[a-zA-Z][0-9]\.\?/u', $value);
 	}
 
 	/**
