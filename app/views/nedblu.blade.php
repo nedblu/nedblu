@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>NedBLU | Creando tu mundo</title>
 	<meta name="author" content="NedBlu">
-	<meta name="description" content="NedBlu es una empresa dedicada al desarrollo de software para internet, dispositivos moviles, dispositivos de escritorio, usando siempre las ultimas tecnologias del mercado, y ademas brinda consultoria sobre SEO, SEM, y estrategias de Inbound y Outbound Marketing.">
-    <meta name="keywords" content="NedBlu, NedBLU, nedblu, nedblu.com, desarrollo, development, web, mobile, movil, apps, aplicaciones, sites, sitios, cosultoria, consultancy, seo, SEO, sem, SEM, marketing.">
+	<meta name="description" content="NedBlu es una empresa dedicada al desarrollo de software para internet, dispositivos moviles, dispositivos de escritorio, usando siempre lo ultimo en tecnologia.">
+    <meta name="keywords" content="NedBlu, NedBLU, nedblu, nedblu.com, desarrollo, web, mobile, movil, apps, aplicaciones, sitios, cosultoria, SEO, SEM.">
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/estilo.css">
 	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/modernizr.js"></script>
 	<script src="js/jquery.autosize.min.js"></script>
-	<!-- // <script src="js/cssrefresh.js"></script> -->
+	{{--<script src="js/cssrefresh.js"></script>--}}
 </head>
 <body>
 	{{-- FB --}}
@@ -58,7 +59,7 @@
 		{{-- SERVICIOS --}}
 		<div id="bg_servicios">
 			<h2 class="sec-title" id="servicios">Servicios</h2>
-			<!-- <article id="nedblu"> -->
+			{{-- <article id="nedblu"> --}}
 			<article class="nedblu">
 				<figure>
 					<img src="img/flat.png" height="750" width="1000" alt="">
@@ -67,7 +68,6 @@
 					</figcaption>
 				</figure>
 				<div id="flex-container">
-					<!-- TESTING THIS... -->
 					<section class="service-item">
 						<div class="img_box">
 							<img src="img/cloud.png" alt="" class="img_1">
@@ -114,8 +114,8 @@
 				<a href="https://twitter.com/NedBlu" class="twitter-follow-button" data-show-count="true" data-lang="en">@NedBlu</a>
 			</div>
 			<div id="social_links">
-				<a target="_blank" href="{{ url('https://www.facebook.com/NedBlu') }}"><span class="icon-appfacebook3"></a>
-				<a target="_blank" href="{{ url('https://twitter.com/nedblu') }}"><span class="icon-apptwitter3"></a>
+				<a target="_blank" href="{{ url('https://www.facebook.com/NedBlu') }}"><span class="icon-appfacebook3"></span></a>
+				<a target="_blank" href="{{ url('https://twitter.com/nedblu') }}"><span class="icon-apptwitter3"></span></a>
 				{{--<a target="_blank" href="{{ url('https://plus.google.com/u/0/b/115149336912971069701/105197020584239115483/posts') }}"><span class="icon-appgoogle-plus3"></a>--}}
 				{{--<a target="_blank" href="{{ url('http://www.youtube.com/channel/UC2w8dparillTLV_Dm-exuoQ') }}"><span class="icon-appyoutube"></a>--}}
 				{{--<a target="_blank" href="{{ url('https://github.com/nedblu') }}"><span class="icon-appgithub2"></span></a>--}}
@@ -201,8 +201,8 @@
 						{{ Form::textarea('mensaje', '', [
 							'class' => 'animated',
 							'placeholder' => 'Escribe tu mensaje...',
-							'cols' => '0',
-							'rows' => '0',
+							'cols' => '1',
+							'rows' => '1',
 							'required' => 'required'
 						]) }}
 					</div>
@@ -220,15 +220,15 @@
 
 	<footer id="footer">
 		<div class="browsers">
-			<span class="icon-appchrome">
-			<span class="icon-appopera">
-			<span class="icon-appsafari">
+			<span class="icon-appchrome"></span>
+			<span class="icon-appopera"></span>
+			<span class="icon-appsafari"></span>
 			{{--<span class="icon-appIE">--}}
 		</div>
 		<div class="platforms">
-			<span class="icon-appapple">
-			<span class="icon-appandroid">
-			<span class="icon-appwindows8">
+			<span class="icon-appapple"></span>
+			<span class="icon-appandroid"></span>
+			<span class="icon-appwindows8"></span>
 		</div>
 	</footer>
 
