@@ -24,12 +24,17 @@ class MailController extends BaseController{
 	        	$message->to('info@nedblu.com', 'Name')->subject( 'NedBLU Site ...' );
 		    });
 		    
-		    // return Redirect::to('/')->with('msg', 'Correo Enviado con Exito');
-		    return Redirect::to('/');
+		    return Redirect::to('/#contacto')->with([
+		    		'msg' => 'Correo enviado con éxito.',
+		    		'res' => 'yes'
+		    	]);
 		
 		}
 
-	    return Redirect::to('/mal');
+	    return Redirect::to('/#contacto')->with([
+	    		'msg' => 'El correo NO se pudo enviar, ingresa los datos correctamente.',
+	    		'res' => 'no'
+	    	]);
 
 	}
 	

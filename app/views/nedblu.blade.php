@@ -183,6 +183,21 @@
 			<article class="contacto">
 				<div id="box-contact">
 				{{Form::open( ['url' => 'email']);}}
+					@if('yes' == ($res = Session::get('res')))
+						<div class="yes_notification">
+							<p>
+								{{-- Correo enviado con éxito. --}}
+								{{ $msg = Session::get('msg'); }}
+							</p>
+						</div>
+					@elseif('no' == ($res = Session::get('res')))
+						<div class="no_notification">
+							<p>
+								{{-- El correo NO se pudo enviar. --}}
+								{{ $msg = Session::get('msg'); }}
+							</p>
+						</div>
+					@endif
 					<div class="box-contact-name">
 						{{ Form::text('name', '', [
 							'placeholder' => 'Escribe tu nombre...',

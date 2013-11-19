@@ -32,7 +32,3 @@ Route::get('/equipo', function(){
 Route::get('/contacto', function(){
 	return Redirect::to('/#contacto');
 });
-
-Route::get('/mal', function(){
-	return 'Las validaciones NO estan funcionando...';
-});

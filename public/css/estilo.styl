@@ -412,10 +412,28 @@ figure
 	background-color light_gray_1
 .contacto
 	max-width 900px
-
 #box-contact
 	max-width 480px
 	padding 0 0.5em 2em 0.5em
+	.yes_notification, .no_notification
+		margin 1em 0
+		// border 1px solid red
+		border thin solid sweet_green
+		border-radius(0.2em)
+		padding 0.3em 0.5em
+		font-family 'Voces', cursive
+		// font-size 0.2em
+		background-color darken(#2ecc71, -10)
+		// color dark_gray_2
+		// color light_gray_2
+		color #2c3e50
+		p
+			font-size 0.8em
+			font-style italic
+	.no_notification
+		background-color darken(#e74c3c,-10)
+		border thin solid darken(#e74c3c, 0)
+		// color light_gray_2
 	.box-contact-name
 		margin 1em 0
 		input
