@@ -1,0 +1,71 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic|Voces|Droid+Sans:400,700|Pompiere|Poiret+One|Waiting+for+the+Sunrise|Ovo|Julius+Sans+One|Open+Sans:300italic,400italic,400|Pontano+Sans");
+@import url("http://fonts.googleapis.com/css?family=Nobile|Julius+Sans+One|Inconsolata");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Open Sans';
+}
+header h1 {
+  font-size: 2em;
+  padding: 1em;
+  color: #434a54;
+}
+.box {
+  max-width: 400px;
+  text-align: left;
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0 0.5em #c8cfd8;
+  -moz-box-shadow: 0 0 0.5em #c8cfd8;
+  -ms-box-shadow: 0 0 0.5em #c8cfd8;
+  -o-box-shadow: 0 0 0.5em #c8cfd8;
+  box-shadow: 0 0 0.5em #c8cfd8;
+}
+.box h2 {
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-align: center;
+  color: #434a54;
+}
+.box input,
+.box label {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0.25em auto;
+  padding: 0.5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.box label {
+  padding: 0.5em 0;
+}
+.box input {
+  outline: none;
+  border: thin solid #1abc9c;
+  color: #2c3e50;
+}
+.box input[type="submit"] {
+  text-align: center;
+  margin: 1em auto 0.5em auto;
+  background-color: #1abc9c;
+  cursor: pointer;
+}

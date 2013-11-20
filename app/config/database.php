@@ -54,10 +54,14 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
+			// 'host'      => '127.0.0.1',
 			'host'      => 'localhost',
-			'database'  => 'database',
-			'username'  => 'root',
-			'password'  => '',
+			// 'database'  => 'cine',
+			'database'  => 'nedbluco_cine',
+			// 'username'  => 'root',
+			'username'  => 'nedbluco_mdos',
+			// 'password'  => '',
+			'password'  => 'morky',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

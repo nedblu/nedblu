@@ -415,7 +415,7 @@ figure
 #box-contact
 	max-width 480px
 	padding 0 0.5em 2em 0.5em
-	.yes_notification, .no_notification
+	.yes_notification, .no_notification, .default_notification
 		margin 1em 0
 		// border 1px solid red
 		border thin solid sweet_green
@@ -434,6 +434,10 @@ figure
 		background-color darken(#e74c3c,-10)
 		border thin solid darken(#e74c3c, 0)
 		// color light_gray_2
+	.default_notification
+		background-color darken(light_gray_1, 0)
+		border thin solid darken(light_gray_2, 10)
+		color dark_gray_1
 	.box-contact-name
 		margin 1em 0
 		input
@@ -545,17 +549,21 @@ figure
 
 // FOOTER
 #footer
-	padding 1.2em
-	background-color light_gray_2
+	// padding 1.2em
+	padding 0.5em
+	background-color #444
+	// background-color sweet_green
+	// background-color light_gray_2
 	text-align center
 	// border 1px solid red
 	.browsers, .platforms
-		// border 1px solid red
 		padding 0.5em
+		display inline-block
 		span:before
-			// border 1px solid green
 			font-size 2em
-			color dark_gray_2
+			// color dark_gray_2
+			color darken(light_gray_2, 20)
+			// color sweet_green
 
 // END FOOTER
 

@@ -6,9 +6,9 @@ class MailController extends BaseController{
 	{
 		$inputs = Input::all();
 		$rules = [
-		// 	'name' => 'alpha',
+			'name' => 'required',
 			'email' => 'email',
-		// 	'mensaje' => 'alpha'
+			'mensaje' => 'required'
 		];
 
 		$validator = Validator::make($inputs, $rules);
@@ -25,14 +25,14 @@ class MailController extends BaseController{
 		    });
 		    
 		    return Redirect::to('/#contacto')->with([
-		    		'msg' => 'Correo enviado exitosamente.',
-		    		'res' => 'yes'
-		    	]);
+	    		'msg' => 'Correo enviado exitosamente...',
+	    		'res' => 'yes'
+	    	]);
 		
 		}
 
 	    return Redirect::to('/#contacto')->with([
-    		'msg' => 'El correo NO se pudo enviar, ingresa los datos en el formato correcto.',
+    		'msg' => 'El correo NO se pudo enviar, ingresa los datos en el formato correcto. * Todos los campos son obligatorios...',
     		'res' => 'no'
     	]);
 

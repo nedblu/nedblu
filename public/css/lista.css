@@ -1,0 +1,163 @@
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic|Voces|Droid+Sans:400,700|Pompiere|Poiret+One|Waiting+for+the+Sunrise|Ovo|Julius+Sans+One|Open+Sans:300italic,400italic,400|Pontano+Sans");
+@import url("http://fonts.googleapis.com/css?family=Nobile|Julius+Sans+One|Inconsolata");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Open Sans';
+}
+header h1 {
+  font-size: 2em;
+  padding: 0.25em;
+  color: #434a54;
+}
+#user_data {
+  text-align: right;
+  max-width: 900px;
+  padding: 0.25em 0;
+}
+#user_data .user,
+#user_data .logout {
+  display: inline-block;
+  padding: 0.25em;
+}
+#user_data .user {
+  margin-right: 1em;
+  color: #19b395;
+}
+#user_data .logout {
+  border: 1px solid #e74c3c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#user_data .logout a {
+  color: #e74c3c;
+  text-decoration: none;
+  display: block;
+}
+#add {
+  max-width: 900px;
+  padding-bottom: 0.5em;
+  border-bottom: thin dashed #2c3e50;
+}
+#add .box_form {
+  max-width: 400px;
+  text-align: right;
+}
+#add .box_form label {
+  text-align: left;
+  display: block;
+}
+#add .box_form input {
+  width: 100%;
+  margin: 0.25em auto;
+  color: #2c3e50;
+  border: thin solid #1abc9c;
+  padding: 0.25em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+}
+#add .box_form input[type="submit"] {
+  width: auto;
+  margin: 0.25em auto 0 auto;
+  font-family: 'Open Sans';
+  text-align: center;
+  padding: 0.25em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: thin solid #1abc9c;
+  background-color: #fff;
+  cursor: pointer;
+}
+#add .notification {
+  border: thin solid #656d78;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-align: right;
+  font-style: italic;
+  margin: 0.5em auto 0 auto;
+  padding: 0.25em;
+  max-width: 400px;
+  color: #656d78;
+}
+#add .notification p {
+  font-size: 0.8em;
+}
+.total {
+  max-width: 900px;
+  text-align: right;
+  margin: 0.5em auto;
+}
+.total span {
+  color: #fff;
+  background-color: #1abc9c;
+  padding: 0.15em 0.25em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+#search {
+  max-width: 900px;
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
+}
+#search input {
+  width: 300px;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #c8cfd8;
+  color: #2c3e50;
+}
+table tr:nth-child(even) {
+  background-color: #eceef1;
+}
+table tr,
+table td {
+  padding: 0.25em 0.5em;
+}
+table tr.t_head,
+table td.t_head {
+  background-color: #1abc9c;
+  color: #f5f7fa;
+}
+table tr a,
+table td a {
+  text-decoration: none;
+}
+table tr a.edit,
+table td a.edit {
+  color: #1abc9c;
+}
+table tr a.delete,
+table td a.delete {
+  color: #e74c3c;
+}
+h2 {
+  color: #2c3e50;
+}

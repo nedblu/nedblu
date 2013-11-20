@@ -32,3 +32,34 @@ Route::get('/equipo', function(){
 Route::get('/contacto', function(){
 	return Redirect::to('/#contacto');
 });
+
+// ---------------------------------------------
+
+Route::get('/cine/login', function(){
+	if(Auth::check()){
+		return Redirect::to('/cine/lista');
+	}else{
+		return View::make('login');
+	}
+});
+
+Route::post('/cine/login', ['uses' => 'AuthController@login', 'before' => 'attempt']);
+
+Route::get('/cine/logout', ['uses' => 'AuthController@logout', 'before' => 'auth']);
+
+Route::get('/cine/lista', ['before' => 'auth', function(){
+	$datos = DB::table('alumno')->orderBy('nombre', 'asc')->get();
+	return View::make('cine')->with('datos', $datos);
+}]);
+
+Route::get('/cine/lista/editar/{num}', ['before' => 'auth', function($id){
+	$data = DB::table('alumno')->where('id', $id)->get();
+	return View::make('editar')->with('data', $data);
+}]);
+
+Route::get('/cine/lista/eliminar/{num}', ['uses' => 'ListaController@eliminar', 'before' => 'auth']);
+
+Route::post('/cine/lista/agregar', ['uses' => 'ListaController@agregar', 'before' => 'auth']);
+
+Route::post('/cine/lista/actualizar', ['uses' => 'ListaController@actualizar', 'before' => 'auth']);
+
