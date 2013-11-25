@@ -63,3 +63,23 @@ Route::post('/cine/lista/agregar', ['uses' => 'ListaController@agregar', 'before
 
 Route::post('/cine/lista/actualizar', ['uses' => 'ListaController@actualizar', 'before' => 'auth']);
 
+
+
+
+// ---------------- BLOG SECTION -------------------//
+/***************************************************/
+Route::group(['prefix' => 'blog'], 
+	
+	function(){
+
+		//Ruta principal
+		Route::get('/', function(){
+			return "index";
+		});
+
+		//Ruta articulo
+		Route::get('/article', function(){
+			return "article";
+		});
+	}
+);
