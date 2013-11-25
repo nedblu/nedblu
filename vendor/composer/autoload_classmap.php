@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'AuthController' => $baseDir . '/app/controllers/AuthController.php',
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
+    'BlogController' => $baseDir . '/app/controllers/BlogController.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'ClassPreloader\\Application' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Application.php',
     'ClassPreloader\\ClassList' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/ClassList.php',
@@ -20,6 +21,8 @@ return array(
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
     'CreateTableAlumno' => $baseDir . '/app/database/migrations/2013_11_20_002308_create_table_alumno.php',
+    'CreateTableCategories' => $baseDir . '/app/database/migrations/2013_11_25_083558_create_table_categories.php',
+    'CreateTablePost' => $baseDir . '/app/database/migrations/2013_11_25_083522_create_table_post.php',
     'CreateTableUsers' => $baseDir . '/app/database/migrations/2013_11_20_053859_create_table_users.php',
     'DatabaseSeeder' => $baseDir . '/app/database/seeds/DatabaseSeeder.php',
     'Doctrine\\Common\\Annotations\\Annotation' => $vendorDir . '/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation.php',

@@ -65,7 +65,6 @@ Route::post('/cine/lista/actualizar', ['uses' => 'ListaController@actualizar', '
 
 
 
-
 // ---------------- BLOG SECTION -------------------//
 /***************************************************/
 Route::group(['prefix' => 'blog'], 
@@ -73,13 +72,12 @@ Route::group(['prefix' => 'blog'],
 	function(){
 
 		//Ruta principal
-		Route::get('/', function(){
-			return "index";
-		});
+		Route::get('/', 'BlogController@index');
 
 		//Ruta articulo
 		Route::get('/article', function(){
 			return "article";
 		});
+
 	}
 );
