@@ -33,7 +33,7 @@ Route::get('/contacto', function(){
 	return Redirect::to('/#contacto');
 });
 
-// ---------------------------------------------
+/*
 
 Route::get('/cine/login', function(){
 	if(Auth::check()){
@@ -62,22 +62,38 @@ Route::get('/cine/lista/eliminar/{num}', ['uses' => 'ListaController@eliminar', 
 Route::post('/cine/lista/agregar', ['uses' => 'ListaController@agregar', 'before' => 'auth']);
 
 Route::post('/cine/lista/actualizar', ['uses' => 'ListaController@actualizar', 'before' => 'auth']);
-
+*/
 
 
 // ---------------- BLOG SECTION -------------------//
 /***************************************************/
-Route::group(['prefix' => 'blog'], 
+Route::group(['prefix' => 'crsystem'], 
 	
 	function(){
 
 		//Ruta principal
-		Route::get('/', 'BlogController@index');
+		//Route::get('/', 'BlogController@index');
 
-		//Ruta articulo
+		Route::get('/',function(){
+			return View::make('crsystem.index');
+		});
+
+		Route::get('changes',function(){
+			return View::make('crsystem.changes');
+		});
+
+		Route::get('new',function(){
+			return View::make('crsystem.new');
+		});
+
+		Route::get('watch',function(){
+			return View::make('crsystem.edit');
+		});
+
+		/*Ruta articulo
 		Route::get('/article', function(){
 			return "article";
-		});
+		});*/
 
 	}
 );
