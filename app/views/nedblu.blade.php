@@ -242,7 +242,8 @@
 			<span class="icon-appchrome"></span>
 			<span class="icon-appopera"></span>
 			<span class="icon-appsafari"></span>
-			<span class="icon-appIE">
+			<span class="icon-appIE"></span>
+			<span class="icon-appfirefox"></span>
 		</div><!--
 		--><div class="platforms">
 			<span class="icon-appapple"></span>
