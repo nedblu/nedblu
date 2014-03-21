@@ -35,7 +35,7 @@ Route::get('/contacto', function(){
 
 /*
 
-Route::get('/cine/login', function(){
+/*Route::get('/cine/login', function(){
 	if(Auth::check()){
 		return Redirect::to('/cine/lista');
 	}else{

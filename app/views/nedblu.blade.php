@@ -242,12 +242,12 @@
 			<span class="icon-appchrome"></span>
 			<span class="icon-appopera"></span>
 			<span class="icon-appsafari"></span>
-			{{--<span class="icon-appIE">--}}
+			<span class="icon-appIE">
 		</div><!--
 		--><div class="platforms">
 			<span class="icon-appapple"></span>
 			<span class="icon-appandroid"></span>
-			{{-- <span class="icon-appwindows8"></span> --}}
+			<span class="icon-appwindows8"></span>
 		</div>
 	</footer>
 
